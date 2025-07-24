@@ -25,3 +25,50 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Angular Team Dashboard Assessment
+
+## 🛠 Project Overview
+
+This Angular project displays a dynamic team dashboard with filtering functionality using PrimeNG.
+
+## 🚀 Setup Instructions
+
+1. Clone the repository or extract the zipped folder.
+2. Run `npm install` to install dependencies.
+3. Run `ng serve` to start the app at `http://localhost:4200`.
+
+## 📁 Folder Structure
+
+- `src/app`: Main Angular app code.
+- `src/assets/data/team.json`: Static team data used for API simulation.
+
+## ⚙️ Features
+
+- Lazy-loaded feature module.
+- PrimeNG UI components.
+- Role & Status filtering.
+- RxJS state management.
+- Dummy performance indicator.
+
+## 📊 Performance
+
+Performance is randomly generated for demo purposes between 60% and 100%.
+
+## 🧪 Testing
+
+- Basic unit tests using Jasmine/Karma.
+- Placeholder for E2E tests using Cypress.
+
+## ♿ Accessibility
+
+- Semantic HTML and keyboard-friendly structure (work in progress).
+
+## 🧠 Notes
+
+- The performance field is simulated.
+- No backend; data is static in JSON.
+
+## 🤖 AI Usage
+
+- Used ChatGPT for code review suggestions and README structuring.
+- Final implementation was manually reviewed and adjusted.
