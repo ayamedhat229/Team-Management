@@ -1,0 +1,21 @@
+<div class="d-flex gap-3 flex-wrap">
+  <p-dropdown 
+    [options]="roles" 
+    [(ngModel)]="selectedRole"
+    optionLabel="name" 
+    optionValue="value"
+    placeholder="Select a Role"
+    (onChange)="onRoleChange($event)" 
+ 
+ />
+
+  <p-dropdown 
+    [options]="statuses" 
+    [(ngModel)]="selectedStatus"
+    optionLabel="name" 
+    optionValue="value"
+    placeholder="Select a Status"
+    (onChange)="onStatusChange($event)" 
+
+ />
+</div>

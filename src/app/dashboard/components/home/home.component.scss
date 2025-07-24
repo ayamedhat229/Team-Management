@@ -1,0 +1,305 @@
+.team-management-container {
+  max-width: full;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 3rem;
+  
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .page-subtitle {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin: 0;
+    font-weight: 400;
+  }
+}
+
+.filters-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  border: 1px solid #e9ecef;
+}
+
+.table-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  
+  .table-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .member-count {
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+.table-wrapper {
+  padding: 0;
+}
+
+// Custom table styles
+::ng-deep .custom-table {
+  .p-datatable-header {
+    display: none;
+  }
+  
+  .p-datatable-thead > tr > th {
+    background: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+    padding: 1rem;
+    border-bottom: 2px solid #dee2e6;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    i {
+      margin-right: 0.5rem;
+      color: #6c757d;
+    }
+  }
+  
+  .p-datatable-tbody > tr {
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background-color: #f8f9fa !important;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  }
+  
+  .p-datatable-tbody > tr > td {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+  }
+}
+
+// Member info styling
+.member-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  .member-name {
+    font-weight: 500;
+    color: #2c3e50;
+  }
+}
+
+// Role badges
+.role-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  &.frontend {
+    background: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+  }
+  
+  &.backend {
+    background: #f3e5f5;
+    color: #7b1fa2;
+    border: 1px solid #ce93d8;
+  }
+  
+  &.designer {
+    background: #fff3e0;
+    color: #f57c00;
+    border: 1px solid #ffcc02;
+  }
+}
+
+// Status badges
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  
+  .status-icon {
+    font-size: 0.7rem;
+  }
+  
+  &.active {
+    background: #e8f5e8;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+    
+    .status-icon {
+      color: #4caf50;
+    }
+  }
+  
+  &.inactive {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+    
+    .status-icon {
+      color: #f44336;
+    }
+  }
+}
+
+// Performance indicators
+.performance-indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+  .performance-text {
+    font-weight: 500;
+    font-size: 0.9rem;
+    
+    &.excellent {
+      color: #2e7d32;
+    }
+    
+    &.good {
+      color: #1976d2;
+    }
+    
+    &.average {
+      color: #f57c00;
+    }
+  }
+  
+  .performance-bar {
+    width: 100%;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+    
+    .performance-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 0.3s ease;
+      
+      &.excellent {
+        background: linear-gradient(90deg, #4caf50, #2e7d32);
+      }
+      
+      &.good {
+        background: linear-gradient(90deg, #2196f3, #1976d2);
+      }
+      
+      &.average {
+        background: linear-gradient(90deg, #ff9800, #f57c00);
+      }
+    }
+  }
+}
+
+// Empty state
+.empty-message {
+  text-align: center;
+  padding: 3rem 2rem;
+  
+  .empty-state {
+    .empty-icon {
+      font-size: 3rem;
+      color: #bdc3c7;
+      margin-bottom: 1rem;
+    }
+    
+    h4 {
+      color: #7f8c8d;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      color: #95a5a6;
+      margin: 0;
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .team-management-container {
+    padding: 1rem;
+  }
+  
+  .header-section .page-title {
+    font-size: 2rem;
+  }
+  
+  .filters-section {
+    padding: 1.5rem;
+  }
+  
+  .table-header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .member-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  ::ng-deep .custom-table .p-datatable-tbody > tr > td {
+    padding: 0.75rem 0.5rem;
+  }
+}

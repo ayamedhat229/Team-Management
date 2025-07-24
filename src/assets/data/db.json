@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Aya Medhat",
+    "role": "Frontend Developer",
+    "status": "Active",
+    "performance": 94
+  },
+  {
+    "name": "Omar Yasser",
+    "role": "Frontend Developer",
+    "status": "Inactive",
+    "performance": 85
+  },
+    {
+    "name": "Jhon Doe",
+    "role": "UI-UX Designer",
+    "status": "Inactive",
+    "performance": 80
+  },
+    {
+    "name": "Ahmed Amir",
+    "role": "UI-UX Designer",
+    "status": "Inactive",
+    "performance": 85
+  },
+    {
+    "name": "Mohamed Ali",
+    "role": "Backend Developer",
+    "status": "Inactive",
+    "performance": 76
+  },
+    {
+    "name": "Amir Yasser",
+    "role": "Backend Developer",
+    "status": "Inactive",
+    "performance": 70
+  },
+    {
+    "name": "Ahmed Ali",
+    "role": "Backend Developer",
+    "status": "Inactive",
+    "performance": 90
+  }
+]
